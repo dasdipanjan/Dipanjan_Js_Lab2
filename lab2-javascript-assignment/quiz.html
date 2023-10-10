@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="This is my website description.">
+    <meta name="keywords" content="Great Learning HTML CSS Course">
+    <link rel="stylesheet" type="text/css" href="css/quiz.css">
+    <script src="js/quiz.js"></script>
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="grid">
+        <div id="quiz">
+            <h1>Javascript Quiz</h1>
+            <hr style="margin-bottom: 20px">
+
+            <p id="question">Test</p>
+
+            <div id="questionsection" class="buttons">
+                <button id="btn0"><span id="choice1"></span></button>
+                <button id="btn1"><span id="choice2"></span></button>
+                <button id="btn2"><span id="choice3"></span></button>
+                <button id="btn3"><span id="choice4"></span></button>
+            </div>
+
+            <div id="result" class="buttons" style="display: none;">
+                <span id="score">Result area</span>
+            </div>
+
+            <hr style="margin-top: 50px">
+            <footer>
+                <span id="progress-msg">Question x of y</span>
+            </footer>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            initialize();
+        });
+    </script>
+</body>
+
+</html>
